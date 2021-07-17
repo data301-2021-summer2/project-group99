@@ -1,4 +1,4 @@
-# Group 99 - {Short snappy Title of your project}
+# Group 99 - MLB Predictions
 
 - Your title can change over time.
 
