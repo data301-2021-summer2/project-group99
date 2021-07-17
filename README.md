@@ -19,7 +19,7 @@ Our dataset includes every MLB game in this season and includes all the factors 
 ## Team Members
 
 - Adam: Avid kazoo player and gerbel dad!
-- Nate: one sentence about you!
+- Nate: Runs like the wind, teehee!
 
 ## References
 
