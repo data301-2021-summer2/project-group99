@@ -1,0 +1,1084 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook source-build='2021.2.1 (20212.21.0712.0907)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Heatmap />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='ratings' inline='true' name='federated.1q93pfn0z69yx81d2r1jy0c7tldh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ratings' name='textscan.1ieceu60uchkqb17ismnt0wxvv0q'>
+            <connection class='textscan' directory='/Users/AdamSarafinchan/DATAproject/project-group99/analysis/Adam' filename='ratings.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ieceu60uchkqb17ismnt0wxvv0q' name='ratings.csv' table='[ratings#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='string' name='team' ordinal='2' />
+            <column datatype='real' name='rating' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ieceu60uchkqb17ismnt0wxvv0q' name='ratings.csv' table='[ratings#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='string' name='team' ordinal='2' />
+            <column datatype='real' name='rating' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ratings.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[ratings.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ratings.csv_7E502B00F55B42DA9169C0AC1E0F305D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[ratings.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ratings.csv_7E502B00F55B42DA9169C0AC1E0F305D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team]</local-name>
+            <parent-name>[ratings.csv]</parent-name>
+            <remote-alias>team</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ratings.csv_7E502B00F55B42DA9169C0AC1E0F305D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[ratings.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ratings.csv_7E502B00F55B42DA9169C0AC1E0F305D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='ratings.csv' datatype='table' name='[__tableau_internal_object_id__].[ratings.csv_7E502B00F55B42DA9169C0AC1E0F305D]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+      <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+      <group caption='Team Set 2' name='[Team Set 2]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='level-members' level='[none:team:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </group>
+      <group caption='AL East' name='[Team Set 3]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='level-members' level='[none:team:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </group>
+      <group caption='Team Set' name='[Team Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='level-members' level='[none:team:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:team:nk]' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;DET&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;MIL&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;MIN&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;TBD&quot;</bucket>
+            </map>
+            <map to='#4878a6'>
+              <bucket>&quot;TOR&quot;</bucket>
+            </map>
+            <map to='#4ba5ba'>
+              <bucket>&quot;SEA&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;CHC&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;LAD&quot;</bucket>
+            </map>
+            <map to='#5c6068'>
+              <bucket>&quot;CHW&quot;</bucket>
+            </map>
+            <map to='#67af5c'>
+              <bucket>&quot;OAK&quot;</bucket>
+            </map>
+            <map to='#7c4d79'>
+              <bucket>&quot;COL&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ARI&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;FLA&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;KCR&quot;</bucket>
+            </map>
+            <map to='#ae123a'>
+              <bucket>&quot;WSN&quot;</bucket>
+            </map>
+            <map to='#b3b7b8'>
+              <bucket>&quot;NYY&quot;</bucket>
+            </map>
+            <map to='#d3293d'>
+              <bucket>&quot;STL&quot;</bucket>
+            </map>
+            <map to='#d3293d'>
+              <bucket>&quot;TEX&quot;</bucket>
+            </map>
+            <map to='#de9d5a'>
+              <bucket>&quot;SDP&quot;</bucket>
+            </map>
+            <map to='#e03531'>
+              <bucket>&quot;BOS&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;ANA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;ATL&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CIN&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CLE&quot;</bucket>
+            </map>
+            <map to='#e74545'>
+              <bucket>&quot;PHI&quot;</bucket>
+            </map>
+            <map to='#e96b20'>
+              <bucket>&quot;SFG&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BAL&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;HOU&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;NYM&quot;</bucket>
+            </map>
+            <map to='#ffda66'>
+              <bucket>&quot;PIT&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ratings.csv' id='ratings.csv_7E502B00F55B42DA9169C0AC1E0F305D'>
+            <properties context=''>
+              <relation connection='textscan.1ieceu60uchkqb17ismnt0wxvv0q' name='ratings.csv' table='[ratings#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='string' name='team' ordinal='2' />
+                  <column datatype='real' name='rating' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='daily_correct' inline='true' name='federated.0349zvr17taite1gatith0mhspx6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='daily_correct' name='textscan.0p5qama1n96qgq1275d2o07x8sja'>
+            <connection class='textscan' directory='/Users/AdamSarafinchan/DATAproject/project-group99/analysis/Adam' filename='daily_correct.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0p5qama1n96qgq1275d2o07x8sja' name='daily_correct.csv' table='[daily_correct#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='integer' name='Correct Guesses' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0p5qama1n96qgq1275d2o07x8sja' name='daily_correct.csv' table='[daily_correct#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='integer' name='Correct Guesses' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[daily_correct.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[daily_correct.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[daily_correct.csv_55472CDE68724F919DB49F7207AF7369]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[daily_correct.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[daily_correct.csv_55472CDE68724F919DB49F7207AF7369]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Correct Guesses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Correct Guesses]</local-name>
+            <parent-name>[daily_correct.csv]</parent-name>
+            <remote-alias>Correct Guesses</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[daily_correct.csv_55472CDE68724F919DB49F7207AF7369]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='daily_correct.csv' datatype='table' name='[__tableau_internal_object_id__].[daily_correct.csv_55472CDE68724F919DB49F7207AF7369]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='daily_correct.csv' id='daily_correct.csv_55472CDE68724F919DB49F7207AF7369'>
+            <properties context=''>
+              <relation connection='textscan.0p5qama1n96qgq1275d2o07x8sja' name='daily_correct.csv' table='[daily_correct#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' name='Date' ordinal='1' />
+                  <column datatype='integer' name='Correct Guesses' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='daily_correct (2)' inline='true' name='federated.1q0cbcr0xj1ovu1dlsvdy1kvz384' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='daily_correct' name='textscan.0itgkeb19bsvgx1h547cg0fdohet'>
+            <connection class='textscan' directory='/Users/AdamSarafinchan/DATAproject/project-group99/analysis/Adam' filename='daily_correct.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0itgkeb19bsvgx1h547cg0fdohet' name='daily_correct.csv' table='[daily_correct#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='integer' name='Correct Guesses' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0itgkeb19bsvgx1h547cg0fdohet' name='daily_correct.csv' table='[daily_correct#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='integer' name='Correct Guesses' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[daily_correct.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[daily_correct.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[daily_correct.csv_9AE2DFD874EE4B5D855C2C34ABBB97C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[daily_correct.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[daily_correct.csv_9AE2DFD874EE4B5D855C2C34ABBB97C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Correct Guesses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Correct Guesses]</local-name>
+            <parent-name>[daily_correct.csv]</parent-name>
+            <remote-alias>Correct Guesses</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[daily_correct.csv_9AE2DFD874EE4B5D855C2C34ABBB97C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='daily_correct.csv' datatype='table' name='[__tableau_internal_object_id__].[daily_correct.csv_9AE2DFD874EE4B5D855C2C34ABBB97C4]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='daily_correct.csv' id='daily_correct.csv_9AE2DFD874EE4B5D855C2C34ABBB97C4'>
+            <properties context=''>
+              <relation connection='textscan.0itgkeb19bsvgx1h547cg0fdohet' name='daily_correct.csv' table='[daily_correct#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' name='Date' ordinal='1' />
+                  <column datatype='integer' name='Correct Guesses' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='pitching' inline='true' name='federated.0fyjzom0cc02u3162tenc1qid7id' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pitching' name='textscan.15v7mwi0dkis3w1c4fsnq1qep3jp'>
+            <connection class='textscan' directory='/Users/AdamSarafinchan/DATAproject/project-group99/analysis/Adam' filename='pitching.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.15v7mwi0dkis3w1c4fsnq1qep3jp' name='pitching.csv' table='[pitching#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='string' name='pitcher' ordinal='2' />
+            <column datatype='real' name='rating' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.15v7mwi0dkis3w1c4fsnq1qep3jp' name='pitching.csv' table='[pitching#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='string' name='pitcher' ordinal='2' />
+            <column datatype='real' name='rating' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pitching.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[pitching.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pitching.csv_AF5FEBC47CBC4986BEE6AA48FC6ADB78]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[pitching.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pitching.csv_AF5FEBC47CBC4986BEE6AA48FC6ADB78]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pitcher</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pitcher]</local-name>
+            <parent-name>[pitching.csv]</parent-name>
+            <remote-alias>pitcher</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pitching.csv_AF5FEBC47CBC4986BEE6AA48FC6ADB78]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[pitching.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pitching.csv_AF5FEBC47CBC4986BEE6AA48FC6ADB78]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='pitching.csv' datatype='table' name='[__tableau_internal_object_id__].[pitching.csv_AF5FEBC47CBC4986BEE6AA48FC6ADB78]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Pitcher' datatype='string' name='[pitcher]' role='dimension' type='nominal' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='pitching.csv' id='pitching.csv_AF5FEBC47CBC4986BEE6AA48FC6ADB78'>
+            <properties context=''>
+              <relation connection='textscan.15v7mwi0dkis3w1c4fsnq1qep3jp' name='pitching.csv' table='[pitching#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='string' name='pitcher' ordinal='2' />
+                  <column datatype='real' name='rating' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1q93pfn0z69yx81d2r1jy0c7tldh'>
+      <datasources>
+        <datasource caption='ratings' name='federated.1q93pfn0z69yx81d2r1jy0c7tldh' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1q93pfn0z69yx81d2r1jy0c7tldh'>
+        <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+        <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:date:qk]' included-values='in-range-or-null'>
+        <min>#2021-04-01#</min>
+        <max>#2021-07-11#</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight 2 (generated)' name='[Action2_56B7E56D4A914963BDC362085C467549]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Team Performance' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Team' />
+        <param name='target' value='Team Performance' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Guesses per Day (Moving Avg.)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='daily_correct (2)' name='federated.1q0cbcr0xj1ovu1dlsvdy1kvz384' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q0cbcr0xj1ovu1dlsvdy1kvz384'>
+            <column datatype='integer' name='[Correct Guesses]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Correct Guesses]' derivation='Sum' name='[win:sum:Correct Guesses:qk:2]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Avg' from='-7' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1q0cbcr0xj1ovu1dlsvdy1kvz384].[win:sum:Correct Guesses:qk:2]' field-type='quantitative' max='10.530552861299711' min='5.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='density-kernel-size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1q0cbcr0xj1ovu1dlsvdy1kvz384].[win:sum:Correct Guesses:qk:2]</rows>
+        <cols>[federated.1q0cbcr0xj1ovu1dlsvdy1kvz384].[tdy:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{786E5D4F-27DE-4CC4-A4AD-2353F11956E8}' />
+    </worksheet>
+    <worksheet name='Pitcher Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pitching' name='federated.0fyjzom0cc02u3162tenc1qid7id' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fyjzom0cc02u3162tenc1qid7id'>
+            <column-instance column='[pitcher]' derivation='None' name='[none:pitcher:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rating]' derivation='None' name='[none:rating:qk]' pivot='key' type='quantitative' />
+            <column caption='Pitcher' datatype='string' name='[pitcher]' role='dimension' type='nominal' />
+            <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.0fyjzom0cc02u3162tenc1qid7id].[none:rating:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0fyjzom0cc02u3162tenc1qid7id].[none:rating:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='shape' value='circle' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fyjzom0cc02u3162tenc1qid7id].[none:pitcher:nk]</rows>
+        <cols>[federated.0fyjzom0cc02u3162tenc1qid7id].[none:rating:qk]</cols>
+      </table>
+      <simple-id uuid='{4193FC0F-A482-4F17-A99B-D9DDBEEC1FC8}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2B55004F-CCB8-41F2-9E3D-85036ECC505B}' />
+    </worksheet>
+    <worksheet name='Team Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ratings' name='federated.1q93pfn0z69yx81d2r1jy0c7tldh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q93pfn0z69yx81d2r1jy0c7tldh'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[rating]' derivation='None' name='[none:rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:team:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:rating:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:team:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:rating:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:rating:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:team:nk]</rows>
+        <cols>[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:rating:qk]</cols>
+      </table>
+      <simple-id uuid='{A0A21599-FC66-4239-A519-F357BE65A285}' />
+    </worksheet>
+    <worksheet name='Team Ratings Throughout Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ratings' name='federated.1q93pfn0z69yx81d2r1jy0c7tldh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q93pfn0z69yx81d2r1jy0c7tldh'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[rating]' derivation='None' name='[none:rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:team:nk]'>
+            <groupfilter function='level-members' level='[none:team:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:team:nk]</column>
+            <column>[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:date:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:team:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:rating:qk]</rows>
+        <cols>[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{E982CD73-9A46-4B0E-8EBB-995E22D901D3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Pitcher Distribution' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BFBB209D-EBAA-4B58-9A30-AE4BDD46C6FF}' />
+    </dashboard>
+    <dashboard name='Team Performance'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='ratings' name='federated.1q93pfn0z69yx81d2r1jy0c7tldh' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1q93pfn0z69yx81d2r1jy0c7tldh'>
+        <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+        <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+        <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='87055' id='7' param='horz' type-v2='layout-flow' w='49349' x='651' y='11807'>
+            <zone h='87055' id='5' type-v2='layout-basic' w='43002' x='651' y='11807'>
+              <zone h='43528' id='3' name='Team Ratings Throughout Year' w='43002' x='651' y='11807'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43527' id='12' name='Guesses per Day (Moving Avg.)' w='43002' x='651' y='55335'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='78' h='87055' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='6347' x='43653' y='11807'>
+              <zone h='52347' id='8' type-v2='empty' w='6347' x='43653' y='11807'>
+                <zone fixed-size='360' h='52347' id='8' is-fixed='true' name='Team Ratings Throughout Year' param='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[Team Set]' type-v2='setMembership' w='6347' x='43653' y='11807'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='43528' id='11' name='Team Distribution' show-title='false' w='41425' x='50000' y='11807'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='57325' id='9' name='Team Ratings Throughout Year' param='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:team:nk]' type-v2='filter' w='7924' x='91425' y='11807'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='10669' id='14' type-v2='layout-flow' w='98698' x='651' y='1138'>
+            <zone h='10669' id='13' name='Team Ratings Throughout Year' param='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:date:qk]' type-v2='filter' values='database' w='98698' x='651' y='1138'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone fixed-size='591' h='29730' id='10' is-fixed='true' name='Team Ratings Throughout Year' pane-specification-id='0' param='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:team:nk]' type-v2='color' w='7924' x='91425' y='69132'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='43527' id='15' name='Pitcher Distribution' w='41425' x='50000' y='55335'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FCC1F62E-B72F-4EB3-A0D4-17C0BFCBC793}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='93'>
+    <window class='worksheet' name='Team Ratings Throughout Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:team:nk]' type='filter' />
+            <card param='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[Team Set]' type='setMembership' />
+            <card pane-specification-id='0' param='[federated.1q93pfn0z69yx81d2r1jy0c7tldh].[none:team:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BC974775-6B36-400D-BCE9-79D4243A6069}' />
+    </window>
+    <window class='worksheet' name='Guesses per Day (Moving Avg.)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{58DC4685-0DB3-4B53-8521-D384357301FA}' />
+    </window>
+    <window class='worksheet' name='Pitcher Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0F4BD65D-5CDC-4EB9-BA56-1E1858C6F56E}' />
+    </window>
+    <window class='worksheet' name='Team Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{701DAF77-4278-44B9-BB70-C022994176E5}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Team Performance'>
+      <viewpoints>
+        <viewpoint name='Guesses per Day (Moving Avg.)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Pitcher Distribution'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Team Distribution' />
+        <viewpoint name='Team Ratings Throughout Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{736FF937-B2C9-430F-A9FE-2E4F12D51176}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Pitcher Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{74AC1C09-E17C-4D14-AB42-3C196B214202}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5DE0D8A1-2FA9-427E-AEFD-D3FA7E467593}' />
+    </window>
+  </windows>
+</workbook>
